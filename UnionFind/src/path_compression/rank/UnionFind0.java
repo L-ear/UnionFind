@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class UnionFind0 {
 	private int[] parent;
+	
 	public UnionFind0(int len) {
 		parent = new int[len];
 		for(int i = 0; i < len; ++i) {
@@ -34,7 +35,7 @@ public class UnionFind0 {
 	
 	static final int N = 10000000;
 	public static void main(String[] args) {
-		System.out.println("ÍêÈ«Â·¾¶Ñ¹Ëõ£¨µÝÍÆ£©ºÍdepthÓÅ»¯£º");
+		System.out.println("å®Œå…¨è·¯å¾„åŽ‹ç¼©ï¼ˆé€’æŽ¨ï¼‰å’Œdepthä¼˜åŒ–ï¼š");
 		int len = N;
 		int unionCount = N;
 		int findCount = N;
@@ -56,7 +57,7 @@ public class UnionFind0 {
 			System.out.println(end-start);
 			sum += (end-start);
 		}
-		System.out.println("Æ½¾ùÓÃÊ±£º"+sum/10);
+		System.out.println("å¹³å‡ç”¨æ—¶ï¼š"+sum/10);
 	}
 
 }

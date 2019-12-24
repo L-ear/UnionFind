@@ -46,7 +46,7 @@ public class UnionFind {
 			System.out.println(end-start);
 			sum += (end-start);
 		}
-		System.out.println("Æ½¾ùÓÃÊ±£º"+sum/10);
+		System.out.println("å¹³å‡ç”¨æ—¶ï¼š"+sum/10);
 	}
 
 }

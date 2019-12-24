@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class UnionFind {
 	private int[] parent;
+	
 	public UnionFind(int len) {
 		parent = new int[len];
 		for(int i = 0; i < len; ++i) {
@@ -22,7 +23,7 @@ public class UnionFind {
 		int p = find(a);
 		int q = find(b);
 		if(p == q) return;
-		if(parent[p] < parent[q]) { // q ¹Òµ½ p ÉÏ
+		if(parent[p] < parent[q]) { // q æŒ‚åˆ° p ä¸Š
 			parent[q] = p;
 		}else if(parent[p] > parent[q]) {
 			parent[p] = q;
@@ -34,7 +35,7 @@ public class UnionFind {
 	
 	static final int N = 10000000;
 	public static void main(String[] args) {
-		System.out.println("depthÓÅ»¯£º");
+		System.out.println("depthä¼˜åŒ–ï¼š");
 		int len = N;
 		int unionCount = N;
 		int findCount = N;
@@ -56,7 +57,7 @@ public class UnionFind {
 			System.out.println(end-start);
 			sum += (end-start);
 		}
-		System.out.println("Æ½¾ùÓÃÊ±£º"+sum/10);
+		System.out.println("å¹³å‡ç”¨æ—¶ï¼š"+sum/10);
 	}
 
 }

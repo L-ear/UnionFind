@@ -3,8 +3,8 @@ package basic;
 import java.util.Random;
 
 public class UnionFind {
-	
 	private int[] parent;
+	
 	public UnionFind(int len) {
 		parent = new int[len];
 		for(int i = 0; i < len; ++i) {
